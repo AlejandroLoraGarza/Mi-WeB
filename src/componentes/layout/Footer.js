@@ -16,7 +16,7 @@ const Footer = () => {
         ease: "easeOut",
       }}
     >
-      Portafolio de Alejandro Lora Garza WEB &copy; React - 2025
+      <a>Portafolio de Alejandro Lora Garza WEB &copy; React - 2025</a>
     </motion.footer>
   )
 }

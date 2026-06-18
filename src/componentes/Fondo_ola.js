@@ -17,9 +17,9 @@ const FondoOla = ({ fondo }) => {
         scale: 1.0,
         scaleMobile: 0.5,
         color: fondo,
-        shininess: 20.0,
+        shininess: 30.0,
         waveHeight: 10.0,
-        waveSpeed: 0.5,
+        waveSpeed: 1,
         zoom: 0.7,
       });
     } else {
