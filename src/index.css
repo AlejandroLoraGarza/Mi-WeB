@@ -81,8 +81,11 @@ code {
 }
 
 .layout {
+  display: flex;
+  flex-direction: column;
   width: 90%;
   margin: 0 auto;
+  min-height: 100dvh;
 }
 
 .header {
@@ -157,7 +160,12 @@ code {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   min-height: 500px;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer {
@@ -171,6 +179,7 @@ code {
   border-top: 1.5px solid var(--border-color);
   backdrop-filter: blur(5px);
   color: var(--text-color);
+  margin-bottom: 0 auto;
 }
 
 .lista-exp {
@@ -366,6 +375,7 @@ code {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  flex: 1;
 }
 
 .cv h2,

@@ -14,9 +14,9 @@ const Inicio = () => {
   return (
     <div className="cv">
       <div className="container" ref={containerRef}>
-        <h1 className="nombre">Soy Alejandro Lora Garza</h1>
+        <h1 className="nombre">Alejandro Lora Garza</h1>
         <p className="p_inicio">
-          Estoy a punto de graduarme de la carrera de licenciado en multimedia y animación digital y quiero ganar experiencia en proyectos web o similares.
+          Soy licenciado en multimedia y animación dígital, con experiencia en desarrollo web front-end y back-end. Actualmente trabajo en Quanta Server y en proyectos independientes como freelancer.
         </p>
       </div>
       <motion.h2
