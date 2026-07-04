@@ -32,9 +32,9 @@ const Contacto = () => {
 
   return (
     <motion.div className='cv'
-      initial={{ x: -100, opacity: 0 }}
+     /*  initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.3, ease: "easeInOut", delay: 0.1 }}
+      transition={{ duration: 0.3, ease: "easeInOut", delay: 0.1 }} */
     >
 
       <h1>Llena los campos</h1>

@@ -162,18 +162,16 @@ code {
 .content {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  height: 100%;
   flex: 1;
   position: relative;
-  overflow: hidden;
 }
 
 .footer {
-  min-height: 50px;
+  height: 75px;
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
-  display: flex;
   align-content: center;
   justify-content: center;
   border-top: 1.5px solid var(--border-color);
@@ -376,6 +374,7 @@ code {
   flex-direction: column;
   gap: 0.5rem;
   flex: 1;
+  height: 100%;
 }
 
 .cv h2,
@@ -650,7 +649,7 @@ textarea {
   align-self: center;
   display: flex;
   position: relative;
-  width: 100%;
+  height: 100%;
   aspect-ratio: 12 / 8;
 }
 
@@ -686,14 +685,20 @@ textarea {
   height: 2rem;
 }
 
+.lista-trabajos {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .trabajo {
-  width: 90%;
+  width: 100%;
   display: grid;
-  grid-template-areas:
-    "header header"
-    "slider info";
-  margin-top: 10px;
-  margin-bottom: 20px;
+  grid-template-areas: 
+  "header header"
+  "slider info";
+  flex-direction: column;
   border: 1px solid var(--border-color);
   transition: all 200ms ease;
   align-self: center;

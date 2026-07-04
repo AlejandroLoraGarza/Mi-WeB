@@ -23,11 +23,12 @@ const Portafolio = () => {
 
   return (
     <motion.div className='cv'
-      initial={{ x: -100, opacity: 0 }}
+      /* initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ duration: 0.3, ease: "easeInOut", delay: 0.1 }}
+      transition={{ duration: 0.3, ease: "easeInOut", delay: 0.1 }} */
     >
-      {
+      <div className='lista-trabajos'>
+      { 
         trabajos.map(trabajo => {
           return (
             <>
@@ -44,7 +45,7 @@ const Portafolio = () => {
           );
         })
       }
-
+      </div>
     </motion.div>
   )
 }
