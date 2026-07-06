@@ -13,6 +13,7 @@ function Page({ children, direction }) {
         type: "tween",
         duration: 0.3,
         ease: "easeOut",
+        times: [0, 0.4, 1],
       }}
       style={{
         width: "100%",
