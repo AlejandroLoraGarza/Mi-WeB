@@ -652,7 +652,7 @@ textarea {
   align-self: center;
   display: flex;
   position: relative;
-  height: 100%;
+  width: 100%;
   aspect-ratio: 12 / 8;
 }
 
@@ -691,21 +691,19 @@ textarea {
 .lista-trabajos {
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  flex-direction: row;
+  justify-content: space-evenly;
   height: 100%;
 }
 
 .trabajo {
-  width: 75%;
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "slider info";
+  display: flex;
   flex-direction: column;
+  flex-basis: 450px;
   border: 1px solid var(--border-color);
   transition: all 200ms ease;
   align-self: center;
+  height: stretch;
 }
 
 
@@ -715,7 +713,7 @@ textarea {
 
 #trabajo_titulo {
   position: relative;
-  background-color: var(--background-color);
+  
   margin-bottom: 0;
   margin-top: 0;
   width: 100%;
@@ -724,29 +722,42 @@ textarea {
   padding: 1rem 0rem 1rem 0rem;
 }
 
-#trabajo_titulo>a {
-  color: var(--text-color2);
+#trabajo_titulo > a {
+  color: var(--text-colora);
   text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .trabajo_infoextra {
   grid-area: info;
   position: relative;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(5px);
-  font-size: 25px;
-  font-weight: 500;
   color: var(--text-color);
+  gap: 12px;
+  padding: 25px;
+}
+
+.trabajo_infoextra h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.trabajo_infoextra span {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .trabajo_infoextra p {
   position: relative;
-  width: 90%;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
 }
 
 

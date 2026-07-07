@@ -36,8 +36,8 @@ const Portafolio = () => {
                 <h2 id="trabajo_titulo"><Link>{trabajo.nombre}</Link></h2>
                 <SliderImagenes imagenurl={trabajo.id === "pia_bdm" ? imagenesBDM : trabajo.id === "pia_mad" ? imagenesAAVD : []} />
                 <div className='trabajo_infoextra' id='trabajo_infoextra'>
-                  <h3>{trabajo.tecnologías}</h3>
                   <span>{trabajo.categorias}</span>
+                  <h3>{trabajo.tecnologías}</h3>
                   <p>{trabajo.descripcion}</p>
                 </div>
               </motion.article>
